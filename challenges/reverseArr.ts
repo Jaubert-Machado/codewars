@@ -1,6 +1,6 @@
 // Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
 
-function reverseOld(num: number): number[] {
+function reverseArrOld(num: number): number[] {
   return num
     .toString()
     .split("")
@@ -10,6 +10,6 @@ function reverseOld(num: number): number[] {
 
 // Pontos a melhorar: Em outras respostas vi que é possivel usar .map(Number), sem a necessidade do parseInt, o que torna o código mais elegante.
 
-export default function reverse(num: number): number[] {
+export default function reverseArr(num: number): number[] {
   return num.toString().split("").map(Number).reverse();
 }
