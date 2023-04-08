@@ -1,7 +1,7 @@
-const arr = [34, -345, -1, 100];
+const str = "8 j 8   mBliB8g  imjB8B8  jl  B";
 
-function smallest(arr: number[]) {
-  return arr.reduce((prev, acc) => (prev > acc ? acc : prev));
+function noSpace(str: string): string {
+  return str.replaceAll(" ", "");
 }
 
-console.log(smallest(arr));
+console.log(noSpace(str));
