@@ -1,7 +1,5 @@
-import chai from "chai";
+import assert from "assert";
 import squareSum from "../challenges/squareSum";
-
-const assert = chai.assert;
 
 describe("Tests", () => {
   it("test", () => {
