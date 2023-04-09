@@ -4,4 +4,4 @@ export default function removeSpaces(x: string): string {
   return x.replaceAll(" ", "");
 }
 
-// Pontos a melhorar : ???
+// Observações: ???

@@ -8,7 +8,7 @@ function reverseArrOld(num: number): number[] {
     .reverse();
 }
 
-// Pontos a melhorar: Em outras respostas vi que é possivel usar .map(Number), sem a necessidade do parseInt, o que torna o código mais elegante.
+// Observações: Em outras respostas vi que é possivel usar .map(Number), sem a necessidade do parseInt, o que torna o código mais elegante.
 
 export default function reverseArr(num: number): number[] {
   return num.toString().split("").map(Number).reverse();

@@ -4,4 +4,4 @@ export default function checkCentury(year: number): number {
   return Math.ceil(year / 100);
 }
 
-// Pontos a melhorar : Essa solução considera que qualquer numero decimal seja arredondado para cima, sendo assim, 2.01 será arredondando para 3, ou seja, ano 201 é arredondado para 3.
+// Observações: Essa solução considera que qualquer numero decimal seja arredondado para cima, sendo assim, 2.01 será arredondando para 3, ou seja, ano 201 é arredondado para 3.

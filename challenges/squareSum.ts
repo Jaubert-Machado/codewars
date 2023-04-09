@@ -13,7 +13,7 @@ function oldSquareSum(numbers: number[]): number {
   return res;
 }
 
-// Pontos a melhorar: Essa função poderia ser simplificada com o uso de reduce, como no exemplo abaixo:
+// Observações: Essa função poderia ser simplificada com o uso de reduce, como no exemplo abaixo:
 
 export default function squareSum(numbers: number[]): number {
   return numbers.reduce((acc, num) => acc + num * num, 0);
