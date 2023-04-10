@@ -1,12 +1,13 @@
-const reverseSeq = (n) => {
-  const arr = [];
+function points(games: string[]): number {
+  return games.reduce((prev, score) => {
+    const [team1, team2] = score.split(":").map(Number);
 
-  for (let i = 1; i <= n; i++) {
-    console.log(1);
-    arr.push(i);
-  }
+    if (team1 > team2) return prev + 3;
+    if (team1 < team2) return prev;
+    if (team1 === team2) return prev + 1;
+  }, 0);
+}
 
-  return arr;
-};
-
-console.log(reverseSeq(5));
+console.log(
+  points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"])
+);
