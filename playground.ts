@@ -1,11 +1,5 @@
-function descend(n): number {
-  return Number(
-    n
-      .toString()
-      .split("")
-      .sort((a, b) => b - a)
-      .join("")
-  );
+function isSquare(n: number) {
+  return Number.isInteger(Math.sqrt(n));
 }
 
-console.log(descend(123));
+console.log(isSquare(4));
