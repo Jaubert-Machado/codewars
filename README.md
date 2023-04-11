@@ -7,3 +7,4 @@ São minhas primeiras tentativas para resolver os problemas, independente do qu�
 De acordo com o nível de dificuldade, os exercícios serão separados em pastas, sendo elas:
 
 8kyu - Fácil (Iniciante);
+7kyu - Fácil;

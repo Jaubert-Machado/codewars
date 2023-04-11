@@ -1,5 +1,15 @@
-function isSquare(n: number) {
-  return Number.isInteger(Math.sqrt(n));
+function openOrSenior(data: number[][]): string[] {
+  return data.map((item) => {
+    const [age, handicap] = item;
+    return age >= 55 && handicap >= 7 ? "Senior" : "Open";
+  });
 }
 
-console.log(isSquare(4));
+console.log(
+  openOrSenior([
+    [45, 12],
+    [55, 21],
+    [19, -2],
+    [104, 20],
+  ])
+);
