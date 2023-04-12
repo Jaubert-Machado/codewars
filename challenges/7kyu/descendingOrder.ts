@@ -18,4 +18,4 @@ export default function descendingOrder(n: number) {
   );
 }
 
-// Oberservações: o map(Number) é necessario pois sort espera dois numeros, funcionaria sem ele mas causa erro de typagem.
+// Observações: o map(Number) é necessario pois sort espera dois numeros, funcionaria sem ele mas causa erro de typagem.

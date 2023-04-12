@@ -1,11 +1,15 @@
-function rotate(str: string): string[] {
-  const result: string[] = [];
+function findNextSquare(sq: number): number {
+  if (Number.isInteger(Math.sqrt(sq))) {
+    let nextSq = sq + 1;
 
-  for (let i = 1; i < str.length + 1; i++) {
-    result.push(str.substring(i).concat(str.substring(0, i)));
+    while (!Number.isInteger(Math.sqrt(nextSq))) {
+      nextSq += 1;
+    }
+
+    return nextSq;
   }
 
-  return result;
+  return -1;
 }
 
-console.log(rotate("Jaubert"));
+console.log(findNextSquare(15241383936));
