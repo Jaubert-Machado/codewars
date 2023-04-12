@@ -10,11 +10,12 @@ Examples:(Input --> Output)
 625 --> 676
 114 --> -1 since 114 is not a perfect square */
 
-export default function findNextSquare(sq: number): number {
+function oldFindNextSquare(sq: number): number {
   if (Number.isInteger(Math.sqrt(sq))) {
     let nextSq = sq + 1;
 
     while (!Number.isInteger(Math.sqrt(nextSq))) {
+      //   console.log(nextSq);
       nextSq += 1;
     }
 
@@ -24,4 +25,12 @@ export default function findNextSquare(sq: number): number {
   return -1;
 }
 
-// Observações: não é todo dia que tenho chance de usar while, gostei da prática.
+// Observações: não é todo dia que tenho chance de usar while, gostei da prática mas pesquisando outras respostas não foi a forma mais inteligente já que aqui estou testando todos os numeros seguintes até encontrar a resposta, usar Math.pow teria feito mais sentido já que aqui estou testando todos os numeros subsequentes e é bem custoso.
+
+export default function findNextSquare(sq: number): number {
+  let square = Math.sqrt(sq);
+
+  if (Number.isInteger(square)) return Math.pow(++square, 2);
+
+  return -1;
+}
