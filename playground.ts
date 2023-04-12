@@ -1,15 +1,11 @@
-function openOrSenior(data: number[][]): string[] {
-  return data.map((item) => {
-    const [age, handicap] = item;
-    return age >= 55 && handicap >= 7 ? "Senior" : "Open";
-  });
+function rotate(str: string): string[] {
+  const result: string[] = [];
+
+  for (let i = 1; i < str.length + 1; i++) {
+    result.push(str.substring(i).concat(str.substring(0, i)));
+  }
+
+  return result;
 }
 
-console.log(
-  openOrSenior([
-    [45, 12],
-    [55, 21],
-    [19, -2],
-    [104, 20],
-  ])
-);
+console.log(rotate("Jaubert"));
