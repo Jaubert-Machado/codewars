@@ -25,7 +25,7 @@ function oldFindNextSquare(sq: number): number {
   return -1;
 }
 
-// Observações: não é todo dia que tenho chance de usar while, gostei da prática mas pesquisando outras respostas não foi a forma mais inteligente já que aqui estou testando todos os numeros seguintes até encontrar a resposta, usar Math.pow teria feito mais sentido já que aqui estou testando todos os numeros subsequentes e é bem custoso.
+// Observações: não é todo dia que tenho chance de usar while, gostei da prática mas pesquisando outras respostas não foi a forma mais inteligente já que aqui estou testando todos os numeros seguintes até encontrar a resposta, usar Math.pow teria feito mais sentido já que testar tantos numeros é bem custoso.
 
 export default function findNextSquare(sq: number): number {
   let square = Math.sqrt(sq);
